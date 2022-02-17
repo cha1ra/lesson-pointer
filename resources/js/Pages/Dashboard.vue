@@ -1,3 +1,14 @@
+<script type="ts" setup>
+import AppLayout from '@/Layouts/AppLayout.vue';
+import Welcome from '@/Jetstream/Welcome.vue';
+import useNotion from '@/composables/useNotion';
+
+const { show: showNotion } = useNotion();
+
+showNotion('4d64bbc0634d4758befa85c5a3a6c22f');
+
+</script>
+
 <template>
     <app-layout title="Dashboard">
         <template #header>
@@ -15,16 +26,3 @@
         </div>
     </app-layout>
 </template>
-
-<script type="ts">
-import { defineComponent } from 'vue';
-import AppLayout from '@/Layouts/AppLayout.vue';
-import Welcome from '@/Jetstream/Welcome.vue';
-
-export default defineComponent({
-  components: {
-    AppLayout,
-    Welcome,
-  },
-});
-</script>

@@ -2,6 +2,7 @@
   "extends": "./tsconfig.json",
   "include": [
     "resources/js/**/*.ts",
+    "resources/js/**/*.vue",
     ".eslintrc.js"
   ],
   "exclude": [

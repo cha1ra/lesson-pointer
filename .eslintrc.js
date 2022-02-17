@@ -6,28 +6,15 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:vue/recommended',
+    'plugin:vue/essential',
     'airbnb-base',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    '@vue/typescript/recommended',
+    '@vue/eslint-config-typescript',
+    '@vue/eslint-config-typescript/recommended',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.eslint.json'],
-  },
-  plugins: [
-    'vue',
-    '@typescript-eslint',
-  ],
-  rules: {
-  },
   settings: {
     'import/resolver': {
       webpack: path.resolve(__dirname, './webpack.config.js'),
     },
   },
-
 };
