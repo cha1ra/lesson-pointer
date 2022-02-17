@@ -2,7 +2,7 @@
     <app-layout title="Dashboard">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Dashboaaaaaa
+                Dashboaaaaaabbcc
             </h2>
         </template>
 
@@ -16,7 +16,7 @@
     </app-layout>
 </template>
 
-<script>
+<script type="ts">
 import { defineComponent } from 'vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import Welcome from '@/Jetstream/Welcome.vue';
