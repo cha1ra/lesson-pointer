@@ -183,6 +183,7 @@ return [
         // laravel-permisson
         Spatie\Permission\PermissionServiceProvider::class,
 
+        App\Providers\FetchDataServiceProvider::class,
     ],
 
     /*

@@ -20,6 +20,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['prerix' => 'v1', 'middleware' => ['auth:sanctum']], function () {
+// 'middleware' => ['auth:sanctum']
+Route::group(['prefix' => 'v1'], function () {
+    Route::get('/hello', function () {
+        return 'Hello World';
+    });
+
    Route::get('fetch/{serviceName}/{id}', [FetchDataController::class, 'fetch']);
 });
+
+
